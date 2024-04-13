@@ -5,19 +5,23 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SistemaReceitas.Core", "SistemaReceitas.Core", "{9F6BE2F6-CDF9-409F-B9E1-EF1B0E415224}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReceitas.Core", "SistemaReceitas.Core\SistemaReceitas.Core.csproj", "{8E7D0157-1544-4E5F-B693-AF1EC7E7F0F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaReceitas.Core", "SistemaReceitas.Core\SistemaReceitas.Core.csproj", "{8E7D0157-1544-4E5F-B693-AF1EC7E7F0F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SistemaReceitas.Infra", "SistemaReceitas.Infra", "{9F956541-E685-4E20-9579-F6B209BBDCF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReceitas.Infra", "SistemaReceitas.Infra\SistemaReceitas.Infra.csproj", "{7AEAB73C-B752-4CD4-BFB5-AF7DE946CED5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaReceitas.Infra", "SistemaReceitas.Infra\SistemaReceitas.Infra.csproj", "{7AEAB73C-B752-4CD4-BFB5-AF7DE946CED5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SistemaReceitas.Application", "SistemaReceitas.Application", "{7CEBB314-02E3-4B46-BA5F-388AED5F5CC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReceitas.Application", "SistemaReceitas.Application\SistemaReceitas.Application.csproj", "{99D94124-3BEE-4C7E-ADD7-126720B83D33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaReceitas.Application", "SistemaReceitas.Application\SistemaReceitas.Application.csproj", "{99D94124-3BEE-4C7E-ADD7-126720B83D33}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SistemaReceitas.API", "SistemaReceitas.API", "{FD7A7EE9-5429-44D9-9945-3F2DC1D3B735}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReceitas.API", "SistemaReceitas.API\SistemaReceitas.API.csproj", "{803E574B-865D-4548-886F-B7678EF9FA0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaReceitas.API", "SistemaReceitas.API\SistemaReceitas.API.csproj", "{803E574B-865D-4548-886F-B7678EF9FA0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SistemaReceitas.Core.Test", "SistemaReceitas.Core.Test", "{C1509917-F38A-4BC8-BE9A-7C98CF240EFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaReceitas.Core.Test", "SistemaReceitas.Core.Test\SistemaReceitas.Core.Test.csproj", "{04FBEEB9-6858-4E91-8464-9AC1216E6ADE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{803E574B-865D-4548-886F-B7678EF9FA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{803E574B-865D-4548-886F-B7678EF9FA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{803E574B-865D-4548-886F-B7678EF9FA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04FBEEB9-6858-4E91-8464-9AC1216E6ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FBEEB9-6858-4E91-8464-9AC1216E6ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04FBEEB9-6858-4E91-8464-9AC1216E6ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04FBEEB9-6858-4E91-8464-9AC1216E6ADE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{7AEAB73C-B752-4CD4-BFB5-AF7DE946CED5} = {9F956541-E685-4E20-9579-F6B209BBDCF3}
 		{99D94124-3BEE-4C7E-ADD7-126720B83D33} = {7CEBB314-02E3-4B46-BA5F-388AED5F5CC1}
 		{803E574B-865D-4548-886F-B7678EF9FA0F} = {FD7A7EE9-5429-44D9-9945-3F2DC1D3B735}
+		{04FBEEB9-6858-4E91-8464-9AC1216E6ADE} = {C1509917-F38A-4BC8-BE9A-7C98CF240EFA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87D654ED-2353-4704-9821-D2EBFD02CC30}
