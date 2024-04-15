@@ -13,6 +13,7 @@ namespace SistemaReceitas.Infra.Repositories
         public string Titulo { get;  set; }
         public string Descricao { get;  set; }
         public string Autor { get;  set; }
+        public string Preparo { get; set; }
         public int Gostei { get;  set; }
         public int Odiei { get;  set; }
         public DateTime Created { get;  set; }

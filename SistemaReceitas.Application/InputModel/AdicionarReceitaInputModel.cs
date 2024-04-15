@@ -14,8 +14,9 @@ namespace SistemaReceitas.Application.InputModel
         public string Descricao { get; set; }
         public string Autor { get; set; }
         public string[] Ingredientes { get; set; }
+        public string Preparo { get; set; }
 
         public Receita ToEntity()
-            => new(0,Imagem,Titulo,Descricao,Autor,Ingredientes,0,0,DateTime.UtcNow);
+            => new(0,Imagem,Titulo,Descricao,Autor,Ingredientes,Preparo,0,0,DateTime.UtcNow);
     }
 }

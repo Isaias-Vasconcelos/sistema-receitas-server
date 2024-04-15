@@ -15,11 +15,12 @@ namespace SistemaReceitas.Application.ViewModel
         public string Descricao { get; private set; }
         public string Autor { get; private set; }
         public string[] Ingredientes { get; private set; }
+        public string Preparo { get; set; }
         public int Gostei { get; private set; }
         public int Odiei { get; private set; }
         public DateTime Created { get; private set; }
 
-        public ReceitaViewModel(int id, string imagem, string titulo, string descricao, string autor, string[] ingredientes, int gostei, int odiei, DateTime created)
+        public ReceitaViewModel(int id, string imagem, string titulo, string descricao, string autor, string[] ingredientes,string preparo, int gostei, int odiei, DateTime created)
         {
             Id = id;
             Imagem = imagem;
@@ -27,12 +28,13 @@ namespace SistemaReceitas.Application.ViewModel
             Descricao = descricao;
             Autor = autor;
             Ingredientes = ingredientes;
+            Preparo = preparo;
             Gostei = gostei;
             Odiei = odiei;
             Created = created;
         }
 
         public static ReceitaViewModel ToViewModel(Receita receita)
-            => new(receita.Id, receita.Imagem, receita.Titulo, receita.Descricao, receita.Autor, receita.Ingredientes, receita.Gostei, receita.Odiei, receita.Created);
+            => new(receita.Id, receita.Imagem, receita.Titulo, receita.Descricao, receita.Autor, receita.Ingredientes,receita.Preparo, receita.Gostei, receita.Odiei, receita.Created);
     }
 }

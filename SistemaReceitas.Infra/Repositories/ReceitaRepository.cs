@@ -21,12 +21,13 @@ namespace SistemaReceitas.Infra.Repositories
             string response;
             try
             {
-                string sqlInsert = @"INSERT INTO receitas (image,titulo,descricao,autor,gostei,odiei,created) VALUES (@Imagem,@Titulo,@Descricao,@Autor,@Gostei,@Odiei,@Created)";
+                string sqlInsert = @"INSERT INTO receitas (image,titulo,descricao,preparo,autor,gostei,odiei,created) VALUES (@Imagem,@Titulo,@Descricao,@Preparo,@Autor,@Gostei,@Odiei,@Created)";
                 await _db.ExecuteAsync(sql: sqlInsert, new
                 {
                     receita.Imagem,
                     receita.Titulo,
                     receita.Descricao,
+                    receita.Preparo,
                     receita.Autor,
                     receita.Odiei,
                     receita.Gostei,
@@ -75,6 +76,7 @@ namespace SistemaReceitas.Infra.Repositories
                         receita.Descricao,
                         receita.Autor,
                         ingredientes.ToArray(),
+                        receita.Preparo,
                         receita.Gostei,
                         receita.Odiei,
                         receita.Created
