@@ -110,7 +110,7 @@ namespace SistemaReceitas.Infra.Repositories
                 });
 
                 receita = new Receita(receitaDb.Id, receitaDb.Imagem, receitaDb.Titulo,
-                    receitaDb.Descricao, receitaDb.Autor, ingredientes.ToArray(), receitaDb.Gostei, receitaDb.Odiei, receitaDb.Created);
+                    receitaDb.Descricao, receitaDb.Autor, ingredientes.ToArray(),receitaDb.Preparo, receitaDb.Gostei, receitaDb.Odiei, receitaDb.Created);
 
             }
             catch (Exception ex)
