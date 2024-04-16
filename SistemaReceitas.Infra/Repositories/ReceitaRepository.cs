@@ -21,7 +21,7 @@ namespace SistemaReceitas.Infra.Repositories
             string response;
             try
             {
-                string sqlInsert = @"INSERT INTO receitas (image,titulo,descricao,preparo,autor,gostei,odiei,created) VALUES (@Imagem,@Titulo,@Descricao,@Preparo,@Autor,@Gostei,@Odiei,@Created)";
+                string sqlInsert = @"INSERT INTO receitas (imagem,titulo,descricao,preparo,autor,gostei,odiei,created) VALUES (@Imagem,@Titulo,@Descricao,@Preparo,@Autor,@Gostei,@Odiei,@Created)";
                 await _db.ExecuteAsync(sql: sqlInsert, new
                 {
                     receita.Imagem,
